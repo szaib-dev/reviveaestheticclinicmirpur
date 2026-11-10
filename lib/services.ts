@@ -8,6 +8,16 @@ export const categories = [
 ];
 export const slugify = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g,'-');
 export const services = categories.flatMap(c => c.services.map(name => ({name, slug: slugify(name), category: c.name, description: c.description, image: c.image})));
+
+// Listed on the clinic card. Confirm availability and the exact offering before booking.
+export const servicesByEnquiry = [
+  'BB Glow',
+  'Microblading / Lip Tint',
+  'Lipolysis',
+  'Exosome Treatments for Hair & Face',
+  'IV Nutrition',
+  'NAD+ Drips',
+];
 export function serviceCopy(slug: string) {
 if(slug === 'hydrafacial') return {overview:'HydraFacial combines cleansing, exfoliation and hydration in a device-based facial. A consultation helps determine whether this approach fits your current skin condition and goals.', benefit:'People exploring a facial for the appearance of dullness, congestion or uneven texture may wish to discuss this option. It is not a substitute for assessment of persistent acne or other skin disease.', process:'Discuss your routine, sensitivities and recent procedures. If suitable, the clinician explains the cleansing, exfoliation and hydration steps and adapts the plan to your skin.'};
 if(slug === 'laser-hair-removal') return {overview:'Laser hair removal uses light to target pigment in hair follicles. Treatment aims to reduce hair growth; it does not guarantee complete or permanent removal.',benefit:'Suitability depends on hair pigment, skin tone, the treatment area and the device used. An experienced practitioner should assess these factors before recommending a course.',process:'Review medicines, tanning, skin history and previous reactions. Ask about the device, eye protection, patch testing, preparation and aftercare. Multiple sessions and maintenance may be discussed without promising a fixed number.'};

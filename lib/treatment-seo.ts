@@ -13,7 +13,7 @@ export const consultationTopics: Record<string, string> = {
   fillers: 'Discuss the area you want assessed and tell the practitioner about any previous filler, including where and when it was placed.',
   mesotherapy: 'Ask which ingredients are proposed, why they are being considered and what alternatives are available.',
   hifu: 'Discuss the area you want assessed and ask which ultrasound device would be used if treatment is appropriate.',
-  'thread-treatments': 'Discuss your priorities, previous procedures and how much time you can allow for recovery.',
+  'thread-treatments': 'Ask about the clinic’s advertised PDO threads for the neck. Discuss previous procedures, suitability and expected recovery before booking.',
   'skin-boosters': 'Ask which product would be used and how the proposed approach compares with other options for your skin concerns.',
   'prp-face': 'Ask how facial PRP differs from the clinic’s scalp PRP service and how the practitioner would assess your skin concern.',
   'hair-prp': 'Describe when your shedding or thinning began and bring details of scalp treatments or medicines you already use.',

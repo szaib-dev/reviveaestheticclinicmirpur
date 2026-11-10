@@ -1,5 +1,5 @@
 import BookingLink from '@/components/BookingLink';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, Phone } from 'lucide-react';
 import { meta } from '@/lib/seo';
 import { practitioners } from '@/lib/config';
 
@@ -12,10 +12,11 @@ export default function Page() {
       <h1>Meet your<br/><em>practitioners.</em></h1>
       <p className="lede">Learn about the practitioners at Revive. Contact the clinic to confirm who will conduct your consultation.</p>
       <div className="practitioner-grid">
-        {practitioners.filter(({ verified }) => verified).map(({ id, name, credentials }) => (
+        {practitioners.filter(({ verified }) => verified).map(({ id, name, phone, credentials }) => (
           <article key={id}>
             <h2>{name}</h2>
             <ul>{credentials.map(credential => <li key={credential}>{credential}</li>)}</ul>
+            {phone && <a className="text-link" href={`tel:${phone}`}><Phone size={17} aria-hidden="true"/>Call {name} · {phone}</a>}
           </article>
         ))}
       </div>
