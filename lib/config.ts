@@ -1,4 +1,11 @@
-export const clinic = { name: 'Revive Aesthetics Clinic', location: 'Mirpur, Azad Jammu & Kashmir, Pakistan', instagram: 'https://www.instagram.com/revive.aesthetic.pk/', domain: 'https://www.reviveaestheticsmirpur.com', address: null, hours: null, mapsUrl: null };
+const openingHours = [
+  { label: 'Monday–Thursday', days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday'], opens: '11:30', closes: '17:30', display: '11:30 AM – 5:30 PM' },
+  { label: 'Friday', days: ['Friday'], opens: '13:30', closes: '17:30', display: '1:30 PM – 5:30 PM' },
+  { label: 'Saturday', days: ['Saturday'], opens: '11:30', closes: '17:30', display: '11:30 AM – 5:30 PM' },
+  { label: 'Sunday', days: ['Sunday'], opens: null, closes: null, display: 'Closed' },
+];
+
+export const clinic = { name: 'Revive Aesthetics Clinic', location: 'Mirpur, Azad Jammu & Kashmir, Pakistan', instagram: 'https://www.instagram.com/revive.aesthetic.pk/', domain: 'https://www.reviveaestheticsmirpur.com', address: null, landline: { display: '05827432845', href: 'tel:+925827432845' }, hours: openingHours, mapsUrl: null };
 export type Practitioner = { id: string; verified: boolean; name: string | null; phone: string | null; whatsappEnabled?: boolean; credentials: string[]; bio: string | null; expertise: string[]; image: string | null };
 // Names and qualifications as listed on the clinic owner's card.
 export const practitioners: Practitioner[] = [

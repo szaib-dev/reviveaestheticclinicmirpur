@@ -10,7 +10,7 @@ Next.js App Router, strict TypeScript, Tailwind CSS and scoped GSAP/ScrollTrigge
 
 ## Content and release controls
 
-- Business facts: `lib/config.ts`. Exact address, opening hours and Maps remain unset.
+- Business facts: `lib/config.ts`. Opening hours, the clinic landline and practitioner numbers are set here. Exact address and Maps remain unset.
 - Two editable practitioner records are unverified and contain no public identities. Development shows explicit placeholders.
 - Treatment catalogue: `lib/services.ts`. General pages require clinical copy review and further treatment-specific detail before public launch.
 - Journal articles live in `lib/articles.json`. Entries marked `published` appear at `/journal/[slug]` and in the sitemap. Development-only preview URLs are noindex and return 404 in production.

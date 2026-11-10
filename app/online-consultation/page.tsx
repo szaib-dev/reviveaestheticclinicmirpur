@@ -1,3 +1,4 @@
+import { ClinicHours, ClinicLandline } from '@/components/ClinicDetails';
 import { ArrowUpRight, CalendarDays, MessageCircle, Phone, ReceiptText } from 'lucide-react';
 import Link from '@/components/PageTransitions';
 import { BookingChoices } from '@/components/BookingChoices';
@@ -24,7 +25,7 @@ export default function Page() {
         <h1>Start with a <em>conversation.</em></h1>
         <p className="lede">If you’re unsure what treatment to ask for, tell us what you’d like help with. We’ll discuss whether an online consultation is a suitable first step.</p>
         <section id="booking-options" aria-label="Choose your practitioner"><BookingChoices/></section>
-        <p className="guide-caption">Confirm availability and the fee with your chosen practitioner before paying.</p>
+        <p className="guide-caption">Confirm availability and the fee with your chosen practitioner before paying.</p><ClinicHours/><ClinicLandline/>
       </div>
       <section className="online-process" aria-labelledby="booking-steps">
         <h2 id="booking-steps">How to book</h2>

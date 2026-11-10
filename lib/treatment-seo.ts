@@ -1,5 +1,12 @@
 /** Public consultation copy. Keep new clinical claims in review drafts. */
 export const consultationTopics: Record<string, string> = {
+  'hair-exosomes': 'Bring a timeline of hair thinning or shedding and ask about diagnosis, the proposed product and evidence before deciding.',
+  'skin-exosomes': 'Describe the skin concern you want assessed. Ask which product and application method are proposed and what evidence supports their use.',
+  'iv-therapy': 'Discuss the clinic’s listed IV options, what each contains, the reason for considering it and whether an IV is appropriate for you.',
+  'injectable-weight-loss-treatment': 'Bring details of your health history and current medicines. Ask whether an injectable option is appropriate, who prescribes it and how follow-up works.',
+  'q-switch-laser': 'Explain what you want assessed and ask whether this type of laser is suitable for the concern and your skin tone.',
+  'carbon-laser': 'Ask which laser and protocol the clinic uses, what the procedure involves and whether it overlaps with the Hollywood Facial.',
+  'hollywood-facial': 'Ask what this facial includes and how it differs from the clinic’s Carbon Laser option before choosing between them.',
   hydrafacial: 'Bring your current skincare routine and ask which steps or products would be used for your skin.',
   oxygeneo: 'Discuss what you want from a facial and ask which OxyGeneo products the clinic would use.',
   'korean-glass-facial': 'Explain whether your priority is hydration, texture or preparation for an occasion. Ask what the facial includes.',

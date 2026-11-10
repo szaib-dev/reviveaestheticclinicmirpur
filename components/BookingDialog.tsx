@@ -1,3 +1,4 @@
+import { ClinicHours, ClinicLandline } from './ClinicDetails';
 import { X } from 'lucide-react';
 import { bookOnWhatsApp } from '@/lib/booking';
 import { BookingChoices } from './BookingChoices';
@@ -8,6 +9,6 @@ export default function BookingDialog() {
     <span className="eyebrow">REVIVE AESTHETICS / BOOKING</span>
     <h2 id="booking-title">Choose your practitioner</h2>
     <p>{bookOnWhatsApp ? 'Message either practitioner on WhatsApp to confirm availability.' : 'Call either practitioner to ask about booking and availability.'}</p>
-    <BookingChoices/>
+    <BookingChoices/><details className="booking-hours"><summary>Clinic hours and landline</summary><ClinicHours/><ClinicLandline/></details>
   </dialog>;
 }
