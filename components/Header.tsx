@@ -1,10 +1,10 @@
 'use client';
 
-import { ArrowUpRight, Menu, MessageCircle, Phone, X } from 'lucide-react';
+import { ArrowUpRight, Menu, X } from 'lucide-react';
 import { useEffect, useLayoutEffect, useRef, useState, useSyncExternalStore } from 'react';
 import { createPortal } from 'react-dom';
 import { usePathname } from 'next/navigation';
-import { clinic } from '@/lib/config';
+import PractitionerCalls from './PractitionerCalls';
 import BookingLink from './BookingLink';
 import Link from './PageTransitions';
 
@@ -106,9 +106,9 @@ export default function Header() {
             </Link>)}
           </nav>
           <BookingLink className="drawer-book" onClick={closeMenu}>
-            <MessageCircle size={20} aria-hidden="true"/><span>Book on WhatsApp</span><ArrowUpRight size={18} aria-hidden="true"/>
+            <span>Choose a practitioner</span><ArrowUpRight size={18} aria-hidden="true"/>
           </BookingLink>
-          <div className="drawer-contact"><span>MIRPUR, AJK</span><a href={clinic.telephone}><Phone size={14} aria-hidden="true"/>{clinic.phone}</a></div>
+          <div className="drawer-contact"><PractitionerCalls/></div>
         </div>
       </div>, document.body)}
   </>;

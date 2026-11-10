@@ -80,3 +80,35 @@ html[data-menu-open=true] { background: #302725; }
 .practitioner-contacts li > span { display: block; font-size: 14px; }
 .practitioner-contacts .text-link { font-size: 16px; min-height: 44px; }
 .directory-group .treatment-enquiries li { padding: 14px 0; border-bottom: 1px solid var(--rule); }
+
+html:has(.booking-dialog[open]) { overflow: hidden; }
+.booking-dialog {
+  width: min(540px, calc(100% - 32px));
+  max-height: calc(100dvh - 32px);
+  padding: clamp(20px, 5vw, 38px);
+  border: 1px solid var(--rule);
+  background: var(--ivory);
+  color: var(--ink);
+  overscroll-behavior: contain;
+}
+.booking-dialog::backdrop { background: rgb(48 39 37 / 65%); }
+.booking-dialog form { display: flex; justify-content: flex-end; }
+.booking-dialog form button { display: grid; place-items: center; width: 44px; height: 44px; background: transparent; border: 1px solid var(--rule); }
+.booking-dialog h2 { font-size: clamp(32px, 6vw, 52px); line-height: 1.05; margin: 14px 0; }
+.booking-choices { list-style: none; padding: 0; margin: 24px 0 0; display: grid; gap: 8px; }
+.booking-choices a {
+  display: grid;
+  grid-template-columns: 20px 1fr 18px;
+  align-items: center;
+  gap: 14px;
+  min-height: 64px;
+  padding: 10px 14px;
+  border: 1px solid var(--rule);
+  background: #efe3df;
+}
+.booking-choices a:hover, .booking-choices a:focus-visible { background: var(--blush); }
+.booking-choices strong, .booking-choices small { display: block; }
+.footer-booking .practitioner-contacts { margin-top: 18px; }
+.drawer-contact .practitioner-contacts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; width: 100%; }
+.drawer-contact .practitioner-contacts a { font-size: 13px; }
+.drawer-contact .practitioner-contacts li { padding-bottom: 0; }

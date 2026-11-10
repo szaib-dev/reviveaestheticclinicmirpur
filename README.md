@@ -10,7 +10,7 @@ Next.js App Router, strict TypeScript, Tailwind CSS and scoped GSAP/ScrollTrigge
 
 ## Content and release controls
 
-- Business facts: `lib/config.ts`. Exact address, opening hours, Maps and WhatsApp remain unset.
+- Business facts: `lib/config.ts`. Exact address, opening hours and Maps remain unset.
 - Two editable practitioner records are unverified and contain no public identities. Development shows explicit placeholders.
 - Treatment catalogue: `lib/services.ts`. General pages require clinical copy review and further treatment-specific detail before public launch.
 - Journal articles live in `lib/articles.json`. Entries marked `published` appear at `/journal/[slug]` and in the sitemap. Development-only preview URLs are noindex and return 404 in production.
@@ -32,7 +32,7 @@ Production build and TypeScript passed. Browser review covered 360, 390, 768, 10
 
 ## Online booking and reviews
 
-`/online-consultation` explains availability confirmation, agreed payment, sharing the receipt on WhatsApp, and confirmation by the clinic. The clinic confirms the fee in WhatsApp before payment. No payment processor is connected and no payment instructions are invented. The clinic-approved international booking number is set in `lib/config.ts` and powers both telephone and WhatsApp links. Rebuild after changing it.
+`/online-consultation` explains booking and payment confirmation. Booking buttons give both practitioners the same options, with call links unless both numbers are confirmed for WhatsApp in `lib/config.ts`. The clinic confirms the fee before payment.
 
 `/reviews` renders only records from `lib/trust.ts` with permissionVerified=true and a source URL, attribution and review text. No testimonials, ratings or results are fabricated.
 
