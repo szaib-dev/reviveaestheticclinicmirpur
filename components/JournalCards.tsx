@@ -1,3 +1,19 @@
-import {ArrowUpRight} from 'lucide-react';
-import {articleImages} from '@/lib/media';
-import Link from '@/components/PageTransitions';import Photo from './Photo';import articles from '@/lib/articles.json';import {preview} from '@/lib/config';export function JournalCards({all=false}:{all?:boolean}){if (!preview) return null; return <div className="journal-grid">{articles.slice(0,all?5:3).map(a=><article key={a.slug}><Link href={preview?`/preview/journal/${a.slug}`:'/journal'} aria-label={preview?`Preview draft: ${a.title}`:`Journal: ${a.title}`}><Photo name={articleImages[a.slug]} sizes="(max-width: 767px) 88vw, 28vw"/><div className="article-meta"><span>{a.category}</span><span>AWAITING CLINICAL REVIEW</span></div><h3>{a.title} <span><ArrowUpRight size={18} aria-hidden="true"/></span></h3><p>{preview?a.lead:'Article in preparation. Available after clinical review.'}</p></Link></article>)}</div>}
+import { ArrowUpRight } from 'lucide-react';
+import { articleImages } from '@/lib/media';
+import { publishedArticles } from '@/lib/journal';
+import Link from '@/components/PageTransitions';
+import Photo from './Photo';
+
+export function JournalCards({ all = false }: { all?: boolean }) {
+  const articles = all ? publishedArticles : publishedArticles.slice(0, 3);
+  return <div className="journal-grid">{articles.map(article =>
+    <article key={article.slug}>
+      <Link href={`/journal/${article.slug}`}>
+        <Photo name={articleImages[article.slug]} sizes="(max-width: 767px) 88vw, 28vw"/>
+        <div className="article-meta"><span>{article.category}</span></div>
+        <h3>{article.title} <span><ArrowUpRight size={18} aria-hidden="true"/></span></h3>
+        <p>{article.lead}</p>
+      </Link>
+    </article>
+  )}</div>;
+}

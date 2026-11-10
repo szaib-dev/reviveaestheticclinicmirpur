@@ -13,8 +13,8 @@ Next.js App Router, strict TypeScript, Tailwind CSS and scoped GSAP/ScrollTrigge
 - Business facts: `lib/config.ts`. Exact address, opening hours, Maps and WhatsApp remain unset.
 - Two editable practitioner records are unverified and contain no public identities. Development shows explicit placeholders.
 - Treatment catalogue: `lib/services.ts`. General pages require clinical copy review and further treatment-specific detail before public launch.
-- Five complete articles: `lib/articles.json`. All are drafts. Preview at `/preview/journal/[slug]` in development only. Production returns 404 outside development; never enable that on a public environment. Public `/journal/[slug]` deliberately returns 404 pending approval and a publishing implementation. Preview URLs are noindex and excluded from sitemap.
-- The production canonical origin is set in `lib/config.ts`. Robots allows crawling and the sitemap lists public indexable routes. Journal drafts are development-only. The public journal and an empty reviews page are noindex.
+- Journal articles live in `lib/articles.json`. Entries marked `published` appear at `/journal/[slug]` and in the sitemap. Development-only preview URLs are noindex and return 404 in production.
+- The production canonical origin is set in `lib/config.ts`. Robots allows crawling and the sitemap lists public indexable routes. The public journal is indexable. The empty reviews page is noindex.
 - Asset provenance and replacement list: ASSET-INVENTORY.md. Stock imagery must be replaced or approved before launch. No patient results are represented.
 - No contact form backend; booking is a genuine call/contact path.
 

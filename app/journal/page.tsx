@@ -1,1 +1,17 @@
-import {JournalCards} from '@/components/JournalCards';import {meta} from '@/lib/seo';export const metadata=meta('The Revive Journal','Considered reading on skin, aesthetics and hair. Our educational articles are in preparation and await clinical review before publication.','/journal',true);export default function Page(){return <div className="section page"><span className="eyebrow">THE REVIVE JOURNAL</span><h1>Informed choices.<br/><em>A fresh perspective.</em></h1><p className="lede">Thoughtful reading, in preparation. Our health articles will be published after review by a qualified clinician.</p><JournalCards all/></div>}
+import { JournalCards } from '@/components/JournalCards';
+import { meta } from '@/lib/seo';
+
+export const metadata = meta(
+  'Skin, Hair & Aesthetics Journal in Mirpur',
+  'Explore practical guides from Revive Aesthetics Clinic in Mirpur, AJK, on choosing a clinic, HydraFacial, acne scars, laser hair removal and hair PRP.',
+  '/journal',
+);
+
+export default function Page() {
+  return <div className="section page">
+    <span className="eyebrow">THE REVIVE JOURNAL</span>
+    <h1>Informed choices.<br/><em>A fresh perspective.</em></h1>
+    <p className="lede">Explore skin, hair and aesthetic care, with questions to bring to your next consultation in Mirpur.</p>
+    <JournalCards all/>
+  </div>;
+}
