@@ -1,1 +1,10 @@
-import type {MetadataRoute} from 'next';import {clinic} from '@/lib/config';import {services} from '@/lib/services';export default function sitemap():MetadataRoute.Sitemap{if(!clinic.domain)return [];return ['','/treatments','/about','/specialists','/journal','/contact','/reviews','/online-consultation',...services.map(s=>`/treatments/${s.slug}`)].map(p=>({url:new URL(p,clinic.domain!).href}))}
+import type { MetadataRoute } from 'next';
+import { canonical } from '@/lib/seo';
+import { services } from '@/lib/services';
+import { reviews } from '@/lib/trust';
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const paths = ['/', '/treatments', '/about', '/specialists', '/contact', '/online-consultation'];
+  if (reviews.some(review => review.permissionVerified && review.sourceUrl && review.text && review.attribution)) paths.push('/reviews');
+  return [...paths, ...services.map(service => `/treatments/${service.slug}`)].map(path => ({ url: canonical(path) }));
+}

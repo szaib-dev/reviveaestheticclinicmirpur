@@ -1,0 +1,48 @@
+/** Public consultation copy. Keep new clinical claims in review drafts. */
+export const consultationTopics: Record<string, string> = {
+  hydrafacial: 'Bring your current skincare routine and ask which steps or products would be used for your skin.',
+  oxygeneo: 'Discuss what you want from a facial and ask which OxyGeneo products the clinic would use.',
+  'korean-glass-facial': 'Explain whether your priority is hydration, texture or preparation for an occasion. Ask what the facial includes.',
+  'carboxy-facial': 'Ask the practitioner to explain the proposed facial, the products involved and what your skin may need afterwards.',
+  'chemical-peels': 'Bring a list of exfoliants and prescription skincare you use. Ask which peel, if any, is appropriate for your concerns.',
+  photofacial: 'Describe the spots or changes in tone you want assessed. Ask which device would be used and how your skin tone affects the discussion.',
+  microneedling: 'Discuss the area and texture you want assessed, any active breakouts, and how your skin healed after previous procedures.',
+  'acne-scar-consultation': 'Bring details of active breakouts, persistent marks or changes in texture. Ask the practitioner which concern should be assessed first.',
+  'pigmentation-consultation': 'Describe when the change in skin tone started and whether it followed a breakout, irritation or a previous treatment.',
+  botox: 'Describe the facial area you want to discuss and any previous injections. Ask who would administer treatment and which product they would use.',
+  fillers: 'Discuss the area you want assessed and tell the practitioner about any previous filler, including where and when it was placed.',
+  mesotherapy: 'Ask which ingredients are proposed, why they are being considered and what alternatives are available.',
+  hifu: 'Discuss the area you want assessed and ask which ultrasound device would be used if treatment is appropriate.',
+  'thread-treatments': 'Discuss your priorities, previous procedures and how much time you can allow for recovery.',
+  'skin-boosters': 'Ask which product would be used and how the proposed approach compares with other options for your skin concerns.',
+  'prp-face': 'Ask how facial PRP differs from the clinic’s scalp PRP service and how the practitioner would assess your skin concern.',
+  'hair-prp': 'Describe when your shedding or thinning began and bring details of scalp treatments or medicines you already use.',
+  'hair-restoration-consultation': 'Bring a timeline of your hair changes and any previous assessments. Ask which options make sense after the cause has been evaluated.',
+  'hair-transplant-consultation': 'Discuss previous hair procedures and ask what an assessment would need to cover before you consider surgery.',
+  'laser-hair-removal': 'Tell the practitioner which areas you want treated, your recent sun exposure and any previous reaction to laser.',
+  'tattoo-removal': 'Bring details about the tattoo, including when it was placed, its colours and any previous removal attempts.',
+  'mole-assessment': 'Describe how long the mole has been present and mention any recent changes so the practitioner can discuss appropriate assessment.',
+  'wart-consultation': 'Tell the practitioner where the lesion is, when you noticed it and whether you have tried any treatment.',
+  'skin-tag-consultation': 'Point out the area that bothers you and ask the practitioner to assess it before discussing removal.',
+  'weight-management': 'Discuss your goals, usual meals and the changes that would be practical in your daily routine.',
+  'dietary-counseling': 'Bring a sample of your usual meals and tell the clinic about dietary restrictions, preferences and your schedule.',
+  'diabetes-nutrition': 'Bring your current care plan and medication list so the nutrition discussion can take existing care into account.',
+  'pcos-nutrition': 'Bring details of your current care and describe the food routines you would like help adapting.',
+  'weight-gain': 'Describe recent weight changes and discuss your appetite, routine and any concerns you want assessed.',
+  'bridal-skincare-planning': 'Share your event date and skincare routine so you can discuss timing, priorities and any expected recovery.',
+};
+
+export const searchNames: Record<string, string> = {
+  'hair-prp': 'Hair PRP Treatment',
+  botox: 'Botox Consultations',
+  'acne-scar-consultation': 'Acne & Acne Scar Consultations',
+};
+
+export const featuredFaqs: Record<string, [string, string]> = {
+  hydrafacial: ['What should I ask before a HydraFacial?', 'Ask which steps and products are planned and tell the practitioner about sensitivities, active skin concerns and recent treatments.'],
+  'laser-hair-removal': ['Can you quote a fixed number of sessions?', 'Ask for an estimate after the area, skin and hair have been assessed. The clinic should explain how progress and suitability would be reviewed.'],
+  'hair-prp': ['Can I book PRP before finding out why my hair is thinning?', 'Start with a consultation about your hair changes. Ask whether further assessment is needed before committing to PRP.'],
+  botox: ['What should I confirm before booking Botox?', 'Confirm the practitioner, product, expected effects, risks and follow-up arrangements at your consultation.'],
+  'acne-scar-consultation': ['Can I discuss active acne and scarring at the same visit?', 'Bring both concerns to the consultation. Ask which should be assessed first and whether you need a referral or a separate treatment plan.'],
+  microneedling: ['What should I bring to a microneedling consultation?', 'Bring your current skincare and medicine list and mention any previous treatments, skin reactions or healing concerns.'],
+};

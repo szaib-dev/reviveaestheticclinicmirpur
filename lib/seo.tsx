@@ -1,3 +1,24 @@
-import type { Metadata } from 'next'; import {clinic} from './config';
-export function meta(title: string, description: string, path: string, draft=false): Metadata { const url=clinic.domain ? new URL(path,clinic.domain).href : undefined; return {title,description,alternates:url?{canonical:url}:undefined,robots:draft||!clinic.domain?{index:false,follow:!draft}:undefined,openGraph:{title,description,type:'website',...(url?{url}:{}),images:[{url:'/images/care-hero.jpg',width:1600,height:1067,alt:'Editorial facial care; illustrative stock photography'}]},twitter:{card:'summary_large_image',title,description,images:['/images/care-hero.jpg']}}; }
-export function JsonLd({data}:{data:object}) { return <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(data).replace(/</g,'\\u003c')}}/>; }
+import type { Metadata } from 'next';
+import { clinic } from './config';
+
+export function canonical(path: string) {
+  return new URL(path, clinic.domain).href;
+}
+
+export function meta(title: string, description: string, path: string, noindex = false): Metadata {
+  const image = {
+    url: canonical('/images/clinic-reception-retouched.png'),
+    alt: 'Retouched photograph of the reception at Revive Aesthetics Clinic in Mirpur',
+  };
+  return {
+    title: { absolute: title.endsWith('| Revive Aesthetics') ? title : `${title} | Revive Aesthetics` },
+    description,
+    ...(noindex ? { robots: { index: false, follow: true } } : { alternates: { canonical: canonical(path) } }),
+    openGraph: { title, description, type: 'website', url: canonical(path), siteName: clinic.name, locale: 'en_PK', images: [image] },
+    twitter: { card: 'summary_large_image', title, description, images: [image] },
+  };
+}
+
+export function JsonLd({ data }: { data: object }) {
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data).replace(/</g, '\\u003c') }} />;
+}
