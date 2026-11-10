@@ -1,0 +1,2 @@
+import {ArrowUpRight} from 'lucide-react';
+import Link from 'next/link';export default function NotFound(){return <div className="section page missing"><span className="eyebrow">404 / A MOMENT OFF THE PATH</span><h1>Let’s bring<br/><em>you back.</em></h1><p>The page you’re looking for isn’t here.</p><Link href="/" className="button">Return to Revive <ArrowUpRight size={18} aria-hidden="true"/></Link></div>}

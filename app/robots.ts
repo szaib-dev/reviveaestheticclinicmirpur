@@ -1,0 +1,1 @@
+import type {MetadataRoute} from 'next';import {clinic} from '@/lib/config';export default function robots():MetadataRoute.Robots{return {rules:{userAgent:'*',allow:clinic.domain?'/':undefined,disallow:clinic.domain?['/preview/']:['/']},...(clinic.domain?{sitemap:new URL('/sitemap.xml',clinic.domain).href}:{})}}

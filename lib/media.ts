@@ -1,0 +1,16 @@
+import photo0 from '../public/images/care-hero.jpg';
+import photo1 from '../public/images/skin-study.jpg';
+import photo2 from '../public/images/treatment-facial.jpg';
+import photo3 from '../public/images/treatment-aesthetic.jpg';
+import photo4 from '../public/images/hair-study.jpg';
+import photo5 from '../public/images/nutrition-study.jpg';
+import photo6 from '../public/images/bridal-study.jpg';
+import photo7 from '../public/images/hair.jpg';
+import specialist from '../public/illustrations/specialist.svg';
+import hydrafacial from '../public/illustrations/hydrafacial.svg';
+import acne from '../public/illustrations/acne.svg';
+import laser from '../public/illustrations/laser.svg';
+import prp from '../public/illustrations/prp.svg';
+import type {StaticImageData} from 'next/image';
+export const media:Record<string,StaticImageData>={'care-hero':photo0,'skin-study':photo1,'treatment-facial':photo2,'treatment-aesthetic':photo3,'hair-study':photo4,'nutrition-study':photo5,'bridal-study':photo6,'hair':photo7,'topic-specialist':specialist,'topic-hydrafacial':hydrafacial,'topic-acne':acne,'topic-laser':laser,'topic-prp':prp};
+export const articleImages:Record<string,string>={'choose-skin-specialist-mirpur':'topic-specialist','hydrafacial-mirpur':'topic-hydrafacial','acne-scars-pigmentation':'topic-acne','laser-hair-removal':'topic-laser','prp-for-hair':'topic-prp'};

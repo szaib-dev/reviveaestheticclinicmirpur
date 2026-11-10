@@ -1,0 +1,2 @@
+import {clinic} from './config';
+export function whatsappBookingUrl(){const {number,verified}=clinic.whatsapp;const digits=number.replace(/[+\s()-]/g,'');if(!verified||!/^[1-9]\d{9,14}$/.test(digits))return null;const message='Hello Revive, I would like to book an online consultation. Please confirm practitioner availability, the fee and payment instructions before I make payment.';return `https://wa.me/${digits}?text=${encodeURIComponent(message)}`}
