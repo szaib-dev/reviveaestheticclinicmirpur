@@ -11,7 +11,7 @@ export default function ConsultationEvents() {
       const href = link.getAttribute('href') ?? '';
       const action = href.startsWith('tel:') ? 'phone_click'
         : /^https:\/\/(wa\.me|api\.whatsapp\.com)\//i.test(href) ? 'whatsapp_click'
-        : /^\/(contact|online-consultation)\/?(?:#booking-options)?$/.test(href) ? 'consultation_click'
+        : /^\/(contact|online-consultation)\/?$/.test(href) ? 'consultation_click'
         : null;
       if (!action) return;
       const analytics = window as Window & { dataLayer?: Record<string, string>[] };

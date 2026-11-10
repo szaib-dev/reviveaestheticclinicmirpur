@@ -4,7 +4,7 @@ import { ArrowUpRight, Menu, X } from 'lucide-react';
 import { useEffect, useLayoutEffect, useRef, useState, useSyncExternalStore } from 'react';
 import { createPortal } from 'react-dom';
 import { usePathname } from 'next/navigation';
-import PractitionerCalls from './PractitionerCalls';
+import PractitionerContacts from './PractitionerContacts';
 import BookingLink from './BookingLink';
 import Link from './PageTransitions';
 
@@ -80,7 +80,7 @@ export default function Header() {
       <Link href="/" className="brand">REVIVE<span>AESTHETICS CLINIC</span></Link>
       <nav className="nav" aria-label="Main navigation">
         {links.map(([label, url]) => <Link key={url} href={url} aria-current={path === url ? 'page' : undefined}>{label}</Link>)}
-        <BookingLink className="nav-book">Book online<ArrowUpRight size={18} aria-hidden="true"/></BookingLink>
+        <BookingLink className="nav-book">Call to book<ArrowUpRight size={18} aria-hidden="true"/></BookingLink>
       </nav>
       <button ref={trigger} type="button" className="menu-toggle" aria-controls={open ? 'mobile-navigation' : undefined}
         aria-label="Open navigation" aria-expanded={open} onClick={() => setMenu({ path, closing: false })}>
@@ -106,9 +106,9 @@ export default function Header() {
             </Link>)}
           </nav>
           <BookingLink className="drawer-book" onClick={closeMenu}>
-            <span>Choose a practitioner</span><ArrowUpRight size={18} aria-hidden="true"/>
+            <span>Call to book</span><ArrowUpRight size={18} aria-hidden="true"/>
           </BookingLink>
-          <div className="drawer-contact"><PractitionerCalls/></div>
+          <div className="drawer-contact"><PractitionerContacts/></div>
         </div>
       </div>, document.body)}
   </>;

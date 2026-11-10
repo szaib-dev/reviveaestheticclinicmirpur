@@ -32,7 +32,7 @@ Production build and TypeScript passed. Browser review covered 360, 390, 768, 10
 
 ## Online booking and reviews
 
-`/online-consultation` explains booking and payment confirmation. Booking buttons give both practitioners the same options, with call links unless both numbers are confirmed for WhatsApp in `lib/config.ts`. The clinic confirms the fee before payment.
+`/online-consultation` explains booking and payment confirmation. General booking buttons call the clinic landline. Both practitioner profiles link directly to their respective WhatsApp numbers. The clinic confirms the fee before payment.
 
 `/reviews` renders only records from `lib/trust.ts` with permissionVerified=true and a source URL, attribution and review text. No testimonials, ratings or results are fabricated.
 

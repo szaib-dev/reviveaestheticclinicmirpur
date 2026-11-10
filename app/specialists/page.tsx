@@ -1,5 +1,6 @@
+import PractitionerWhatsApp from '@/components/PractitionerWhatsApp';
 import BookingLink from '@/components/BookingLink';
-import { ArrowUpRight, Phone } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import { meta } from '@/lib/seo';
 import { practitioners } from '@/lib/config';
 
@@ -16,7 +17,7 @@ export default function Page() {
           <article key={id}>
             <h2>{name}</h2>
             <ul>{credentials.map(credential => <li key={credential}>{credential}</li>)}</ul>
-            {phone && <a className="text-link" href={`tel:${phone}`}><Phone size={17} aria-hidden="true"/>Call {name} · {phone}</a>}
+            {name && phone && <PractitionerWhatsApp name={name} phone={phone}/>}
           </article>
         ))}
       </div>

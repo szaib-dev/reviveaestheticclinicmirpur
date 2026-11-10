@@ -1,18 +1,18 @@
 import { ClinicHours, ClinicLandline } from '@/components/ClinicDetails';
-import { ArrowUpRight, CalendarDays, MessageCircle, Phone, ReceiptText } from 'lucide-react';
+import { ArrowUpRight, CalendarDays, Phone, ReceiptText } from 'lucide-react';
 import Link from '@/components/PageTransitions';
-import { BookingChoices } from '@/components/BookingChoices';
-import { bookOnWhatsApp } from '@/lib/booking';
+import BookingLink from '@/components/BookingLink';
+import PractitionerContacts from '@/components/PractitionerContacts';
 import { meta } from '@/lib/seo';
 
 export const metadata = meta(
   'Online Consultation Guide',
-  'Find out how to request an online consultation with Revive and confirm availability, fees and payment details with your chosen practitioner.',
+  'Find out how to request an online consultation with Revive and confirm availability, fees and payment details with the clinic.',
   '/online-consultation',
 );
 
 const steps = [
-  { icon: bookOnWhatsApp ? MessageCircle : Phone, title: 'Contact your preferred practitioner', copy: 'Share your preferred days and a brief reason for the consultation. The clinic can help you decide whether to start online or visit in person.' },
+  { icon: Phone, title: 'Call the clinic', copy: 'Share your preferred days and a brief reason for the consultation. The clinic can help you decide whether to start online or visit in person.' },
   { icon: CalendarDays, title: 'Confirm the appointment details', copy: 'Ask who you’ll speak with, when they’re available and what the consultation costs. Agree on the fee and payment instructions before sending money.' },
   { icon: ReceiptText, title: 'Send your receipt if payment is requested', copy: 'Use the payment instructions agreed with the clinic, then share your receipt using the method the practitioner confirms. Wait for the clinic to confirm your appointment and send joining details.' },
 ];
@@ -24,8 +24,8 @@ export default function Page() {
       <div>
         <h1>Start with a <em>conversation.</em></h1>
         <p className="lede">If you’re unsure what treatment to ask for, tell us what you’d like help with. We’ll discuss whether an online consultation is a suitable first step.</p>
-        <section id="booking-options" aria-label="Choose your practitioner"><BookingChoices/></section>
-        <p className="guide-caption">Confirm availability and the fee with your chosen practitioner before paying.</p><ClinicHours/><ClinicLandline/>
+        <section id="booking-options" aria-label="Booking and practitioner contacts"><BookingLink className="button"><Phone size={18} aria-hidden="true"/>Call the clinic to book<ArrowUpRight size={18} aria-hidden="true"/></BookingLink><p className="guide-caption">Already know which doctor you’d like to speak with?</p><PractitionerContacts/></section>
+        <p className="guide-caption">Confirm availability and the fee with the clinic before paying.</p><ClinicHours/><ClinicLandline/>
       </div>
       <section className="online-process" aria-labelledby="booking-steps">
         <h2 id="booking-steps">How to book</h2>
