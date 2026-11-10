@@ -1,23 +1,25 @@
 import Image from 'next/image';
-import reception from '@/public/images/clinic-reception.jpg';
-import treatmentRoom from '@/public/images/clinic-treatment-room.jpg';
-import seating from '@/public/images/clinic-seating.jpg';
-import careRoom from '@/public/images/clinic-care-room.jpg';
+import reception from '@/public/images/clinic-reception-retouched.png';
+import careRoom from '@/public/images/clinic-care-room-retouched.png';
+
+import seating from '@/public/images/clinic-seating-retouched.png';
+
+import treatmentRoom from '@/public/images/clinic-treatment-room-retouched.png';
 
 const photos = [
-  { src: reception, alt: 'Reception desk and seating at Revive Aesthetics Clinic', label: 'Reception' },
-  { src: seating, alt: 'Sofa and chairs inside Revive Aesthetics Clinic', label: 'Seating area' },
-  { src: treatmentRoom, alt: 'Treatment bed and equipment inside Revive Aesthetics Clinic', label: 'Treatment room' },
-  { src: careRoom, alt: 'View through the doorway into a Revive treatment room', label: 'Inside a treatment room' },
+  { src: reception, alt: 'Retouched view of the cream reception desk and mauve sofa at Revive', label: 'Reception' },
+  { src: seating, alt: 'Retouched view of the sofa and chairs at Revive', label: 'Seating area' },
+  { src: careRoom, alt: 'Retouched view into a Revive treatment room', label: 'Inside a treatment room' },
+  { src: treatmentRoom, alt: 'Retouched view of a treatment bed and equipment at Revive', label: 'Treatment room' },
 ];
 
 export default function ClinicPhotos({ featured = false }: { featured?: boolean }) {
   return (
     <div className={featured ? 'clinic-photo-feature' : 'clinic-photo-grid'}>
-      {(featured ? photos.slice(0, 1) : photos.slice(1)).map(({ src, alt, label }) => (
+      {(featured ? photos.slice(0, 1) : photos).map(({ src, alt, label }) => (
         <figure key={label}>
           <Image src={src} alt={alt} sizes={featured ? '(max-width: 767px) 88vw, 52vw' : '(max-width: 767px) 88vw, 28vw'} placeholder="blur" />
-          <figcaption>{label} · Revive Aesthetics Clinic</figcaption>
+          <figcaption>{label} · Retouched clinic photograph</figcaption>
         </figure>
       ))}
     </div>

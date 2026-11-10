@@ -29,4 +29,4 @@ Journal cards and draft article leads now use original code-native SVG concept i
 
 ## Owner-supplied clinic photography
 
-The homepage and Our Clinic page use the clinic owner's reception photo. The Our Clinic gallery adds the seating area and two treatment-room views. The brochure informed the text-only practitioner profiles. The photo showing a security monitor was left out of the public gallery.
+The homepage features the user-supplied retouched reception. The gallery includes the reception, seating area and two treatment-room views. The seating and treatment-room edits were made with built-in ImageGen using the owner photos as references. The edits tidy incidental clutter and balance lighting in warm ivory, taupe, muted mauve and blue while retaining the room layout and equipment. The brochure informed the text-only practitioner profiles. The photo showing a security monitor was left out of the public gallery.

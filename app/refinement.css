@@ -32,3 +32,6 @@ html{scrollbar-gutter:auto}html[data-menu-open=true]{background:#242b29}.mobile-
 .practitioner-grid h2{font-size:clamp(32px,4vw,52px);margin-bottom:16px}
 .practitioner-grid ul{list-style:none;padding:0;color:#6c605b}
 @media(max-width:767px){.clinic-photo-grid,.practitioner-grid{grid-template-columns:1fr}}
+
+.clinic-about-copy h2 { margin-bottom: 24px; }
+.clinic-about-copy h3 { margin: 28px 0 12px; }
