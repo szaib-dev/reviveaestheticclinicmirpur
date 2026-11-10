@@ -32,7 +32,7 @@ Production build and TypeScript passed. Browser review covered 360, 390, 768, 10
 
 ## Online booking and reviews
 
-`/online-consultation` explains availability confirmation, agreed payment, sharing the receipt on WhatsApp, and confirmation by the clinic. The fee is PKR 0 marked provisional in `lib/config.ts`. No payment processor is connected and no payment instructions are invented. The clinic-approved international booking number is set in `lib/config.ts` and powers both telephone and WhatsApp links. Rebuild after changing it.
+`/online-consultation` explains availability confirmation, agreed payment, sharing the receipt on WhatsApp, and confirmation by the clinic. The clinic confirms the fee in WhatsApp before payment. No payment processor is connected and no payment instructions are invented. The clinic-approved international booking number is set in `lib/config.ts` and powers both telephone and WhatsApp links. Rebuild after changing it.
 
 `/reviews` renders only records from `lib/trust.ts` with permissionVerified=true and a source URL, attribution and review text. No testimonials, ratings or results are fabricated.
 

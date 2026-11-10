@@ -1,6 +1,6 @@
 const bookingNumber = '+923025800744';
 
-export const clinic = { name: 'Revive Aesthetics Clinic', location: 'Mirpur, Azad Jammu & Kashmir, Pakistan', phone: bookingNumber, telephone: `tel:${bookingNumber}`, instagram: 'https://www.instagram.com/revive.aesthetic.pk/', domain: 'https://www.reviveaestheticsmirpur.com', address: null, hours: null, mapsUrl: null, whatsapp: {number: bookingNumber, verified: true, placeholder: '+92 XXX XXXXXXX'}, onlineConsultation: {feePKR: 0, feeConfirmed: false} };
+export const clinic = { name: 'Revive Aesthetics Clinic', location: 'Mirpur, Azad Jammu & Kashmir, Pakistan', phone: bookingNumber, telephone: `tel:${bookingNumber}`, instagram: 'https://www.instagram.com/revive.aesthetic.pk/', domain: 'https://www.reviveaestheticsmirpur.com', address: null, hours: null, mapsUrl: null, whatsapp: {number: bookingNumber, verified: true} };
 export type Practitioner = { id: string; verified: boolean; name: string | null; credentials: string[]; bio: string | null; expertise: string[]; image: string | null };
 // Names and qualifications as listed on the clinic owner's card.
 export const practitioners: Practitioner[] = [

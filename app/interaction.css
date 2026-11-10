@@ -1,0 +1,76 @@
+a[href], button:enabled, summary { cursor: pointer; }
+button:disabled { cursor: not-allowed; }
+
+.page-curtain {
+  position: fixed;
+  inset: 0;
+  z-index: 190;
+  pointer-events: none;
+  background: #e7d4cd;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  border-block-start: 1px solid #ba928e;
+}
+
+html[data-menu-open=true] { background: #302725; }
+.header .menu-toggle {
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  color: inherit;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  transition: background-color .18s ease, transform .18s ease;
+}
+.header .menu-toggle:active, .drawer-close:active { transform: scale(.92); }
+.mobile-drawer {
+  width: auto;
+  right: 0;
+  background: #302725;
+  color: #f7f3ee;
+  animation: drawer-reveal .32s cubic-bezier(.2,.75,.3,1) both;
+}
+.mobile-drawer[data-closing=true] {
+  animation: drawer-dismiss .22s ease-in both;
+}
+.drawer-eyebrow, .drawer-contact, .drawer-content nav svg { color: #e0c2b9; }
+.drawer-eyebrow { font-size: 10px; }
+.drawer-content nav>a[aria-current=page] { color: #efc7bb; }
+.drawer-book { justify-content: flex-start; background: #e9cec4; transition: background-color .2s ease; }
+.drawer-book span { flex: 1; }
+.drawer-book:hover, .drawer-book:focus-visible { background: #f4e2dc; }
+.mobile-drawer :focus-visible { outline-color: #f3d4c9; }
+@keyframes drawer-reveal {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(0); }
+}
+@keyframes drawer-dismiss {
+  from { transform: translateY(0); }
+  to { transform: translateY(-100%); }
+}
+
+.consultation-guide {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  align-items: start;
+  gap: clamp(32px, 7vw, 110px);
+  margin-top: 26px;
+}
+.consultation-guide h1 { margin: 0 0 24px; }
+.consultation-guide h1 em { display: block; }
+.consultation-guide .button { margin-top: 18px; }
+.consultation-guide .guide-caption { margin-top: 14px; font-size: 14px; }
+.consultation-guide .online-process { border-top: 1px solid var(--rule); padding-top: 22px; }
+.consultation-guide ol { list-style: none; margin: 0; padding: 0; }
+.consultation-guide .online-step { grid-template-columns: 28px 1fr; align-items: start; gap: 16px; }
+.consultation-guide .online-step > svg { margin-top: 4px; color: #8c635a; }
+@media(max-width: 850px) {
+  .consultation-guide { grid-template-columns: 1fr; }
+}
+@media(prefers-reduced-motion: reduce) {
+  .page-curtain { display: none; }
+  .mobile-drawer, .mobile-drawer[data-closing=true] { animation: none; }
+  .header .menu-toggle, .drawer-close, .drawer-book { transition: none; }
+}

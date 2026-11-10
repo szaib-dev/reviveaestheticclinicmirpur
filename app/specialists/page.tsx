@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import BookingLink from '@/components/BookingLink';
 import { ArrowUpRight } from 'lucide-react';
 import { meta } from '@/lib/seo';
 import { practitioners } from '@/lib/config';
@@ -19,7 +19,7 @@ export default function Page() {
           </article>
         ))}
       </div>
-      <Link className="button" href="/contact">Contact the clinic <ArrowUpRight size={18} aria-hidden="true"/></Link>
+      <BookingLink className="button">Contact the clinic <ArrowUpRight size={18} aria-hidden="true"/></BookingLink>
     </div>
   );
 }
