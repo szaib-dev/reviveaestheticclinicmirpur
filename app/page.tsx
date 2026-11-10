@@ -10,7 +10,7 @@ import {clinic} from '@/lib/config';
 import {JournalCards} from '@/components/JournalCards';
 
 export const metadata=meta('Skin & Aesthetic Clinic in Mirpur AJK | Revive Aesthetics','Explore HydraFacial, laser hair removal, hair PRP and aesthetic consultations at Revive, a skin and aesthetic clinic in Mirpur, Azad Jammu & Kashmir.','/');
-export default function Home(){return <div className="revive-home">{clinic.domain&&<JsonLd data={{'@context':'https://schema.org','@type':'MedicalClinic','@id':canonical('/#clinic'),name:clinic.name,url:canonical('/'),telephone:'+925827432845',image:canonical('/images/clinic-reception-retouched.png'),areaServed:{'@type':'City',name:'Mirpur, Azad Jammu & Kashmir, Pakistan'},sameAs:[clinic.instagram]}}/>}<Motion/>
+export default function Home(){return <div className="revive-home">{clinic.domain&&<JsonLd data={{'@context':'https://schema.org','@type':'MedicalClinic','@id':canonical('/#clinic'),name:clinic.name,url:canonical('/'),telephone:clinic.phone,image:canonical('/images/clinic-reception-retouched.png'),areaServed:{'@type':'City',name:'Mirpur, Azad Jammu & Kashmir, Pakistan'},sameAs:[clinic.instagram]}}/>}<Motion/>
 <section className="cinema-hero" aria-labelledby="hero-title">
 <Photo name="care-hero" className="cinema-image" priority/><div className="cinema-shade"/>
 <div className="hero-register"><span>REVIVE / MIRPUR, AJK</span><span>SKIN · AESTHETICS · WELLNESS</span></div>
