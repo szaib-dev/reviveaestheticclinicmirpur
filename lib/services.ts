@@ -33,7 +33,7 @@ export const ivOptions = [
   { id: 'skin-glow-cocktails', name: 'Skin Glow Cocktails', topic: 'Ask what the clinic offers under this name, what is included and how the practitioner assesses suitability.' },
   { id: 'iv-nad', name: 'IV NAD', topic: 'Ask why the clinic might discuss this option and what evidence, uncertainties and risks apply to your goals.' },
   { id: 'immunity-boosters', name: 'Immunity Boosters', topic: 'Ask what the clinic means by this name and what evidence supports the proposed use.' },
-  { id: 'anti-aging-iv-therapy', name: 'Anti-Aging IV Therapy', topic: 'Explain what you want help with and ask whether an IV would be appropriate for that concern.' },
+  { id: 'anti-aging-iv-therapy', name: 'Anti-Aging', topic: 'Explain what you want help with and ask whether an IV would be appropriate for that concern.' },
 ];
 
 export function collectionLinks(service: string) {
