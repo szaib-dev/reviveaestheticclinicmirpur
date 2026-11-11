@@ -1,5 +1,6 @@
 /** Public consultation copy. Keep new clinical claims in review drafts. */
 export const consultationTopics: Record<string, string> = {
+  'face-contouring-double-chin-reduction': 'Discuss face contouring and double chin reduction by lipolytic injections. Ask which product and treatment areas the practitioner would consider for your concern.',
   'hair-exosomes': 'Bring a timeline of hair thinning or shedding and ask about diagnosis, the proposed product and evidence before deciding.',
   'skin-exosomes': 'Describe the skin concern you want assessed. Ask which product and application method are proposed and what evidence supports their use.',
   'iv-therapy': 'Discuss the clinic’s listed IV options, what each contains, the reason for considering it and whether an IV is appropriate for you.',
