@@ -13,12 +13,12 @@ The supplied Business Profile screenshot reports 56 searches showing the profile
 
 ## Suggested Business Profile description
 
-Revive Aesthetics Clinic offers skin, hair and aesthetic consultations in Mirpur, Azad Jammu & Kashmir, Pakistan. Discuss acne care, acne marks, pigmentation, facial care, laser hair removal and hair concerns with the clinic. Explore HydraFacial, aesthetic consultation options and nutrition services. View the practitioners’ listed qualifications on our website, call 05827432845 to confirm availability and fees, and use our Google Maps location for directions. Suitability and treatment plans are discussed individually at consultation.
+Revive Aesthetics Clinic offers skin, hair and aesthetic consultations at F1 Haul Rd, Sector F 1 New Mirpur City, AJK. Discuss acne care, acne marks, pigmentation, facial care, laser hair removal and hair concerns with the clinic. Explore HydraFacial, aesthetic consultation options and nutrition services. View the practitioners’ listed qualifications on our website, call 05827432845 to confirm availability and fees, and use our Google Maps location for directions. Suitability and treatment plans are discussed individually at consultation.
 
 ## Profile actions to review
 
 - Use the real business name consistently. Keep keywords out of the business-name field unless they are part of the actual name.
-- Confirm the full street address, map pin, phone number, clinic hours and website URL are accurate and consistent.
+- Use the owner-confirmed address: F1 Haul Rd, Sector F 1 New Mirpur City. Confirm the map pin, phone number, clinic hours and website URL are accurate and consistent.
 - Select categories that accurately describe the business. Use a dermatologist designation only when supported by the relevant professional qualifications and registration.
 - Describe services that are genuinely offered, including acne consultations, pigmentation consultations, HydraFacial and laser hair removal. Link to the corresponding website pages where the profile supports it.
 - Add authentic clinic photos. Keep editorial website photographs separate from photographs presented as the actual premises or staff.
