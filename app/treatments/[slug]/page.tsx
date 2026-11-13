@@ -1,8 +1,8 @@
 import BookingLink from '@/components/BookingLink';
-import { consultationTopics, searchNames, featuredFaqs } from '@/lib/treatment-seo';
+import { consultationTopics, searchNames, featuredFaqs, treatmentDescriptions } from '@/lib/treatment-seo';
 import {ArrowUpRight,ArrowLeft} from 'lucide-react';
 import {notFound} from 'next/navigation';import Link from '@/components/PageTransitions';import {ivOptions,services,serviceCopy} from '@/lib/services';import {meta,JsonLd} from '@/lib/seo';import {clinic} from '@/lib/config';import Photo from '@/components/Photo';export const dynamicParams = false;
-export function generateStaticParams(){return services.map(s=>({slug:s.slug}))}export async function generateMetadata({params}:{params:Promise<{slug:string}>}){const {slug}=await params;const s=services.find(s=>s.slug===slug);return s?meta(`${searchNames[slug] ?? s.name} in Mirpur`,`${s.name} at Revive in Mirpur, AJK. ${consultationTopics[slug]}`,`/treatments/${slug}`):{}}
+export function generateStaticParams(){return services.map(s=>({slug:s.slug}))}export async function generateMetadata({params}:{params:Promise<{slug:string}>}){const {slug}=await params;const s=services.find(s=>s.slug===slug);return s?meta(`${searchNames[slug] ?? s.name} in Mirpur`,treatmentDescriptions[slug] ?? `${s.name} consultations in Mirpur, AJK at Revive Aesthetics Clinic. Discuss your concerns, suitability, costs and next steps with our practitioners.`,`/treatments/${slug}`):{}}
 export default async function Page({params}:{params:Promise<{slug:string}>}){const {slug}=await params;const s=services.find(s=>s.slug===slug);if(!s)notFound();const c=serviceCopy(slug);
 const topic=consultationTopics[slug];
 const relatedSlugs: Record<string, string[]> = {

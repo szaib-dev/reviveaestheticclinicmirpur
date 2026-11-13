@@ -6,8 +6,8 @@ import PractitionerContacts from '@/components/PractitionerContacts';
 import { meta } from '@/lib/seo';
 
 export const metadata = meta(
-  'Online Consultation Guide',
-  'Find out how to request an online consultation with Revive and confirm availability, fees and payment details with the clinic.',
+  'Online Consultations | Mirpur AJK',
+  'Request an online consultation with Revive Aesthetics Clinic in Mirpur, AJK. Find out how to confirm practitioner availability, appointment fees and booking details.',
   '/online-consultation',
 );
 

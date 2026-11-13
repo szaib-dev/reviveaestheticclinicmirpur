@@ -10,12 +10,14 @@ export function meta(title: string, description: string, path: string, noindex =
     url: canonical('/images/clinic-reception-retouched.png'),
     alt: 'Retouched photograph of the reception at Revive Aesthetics Clinic in Mirpur',
   };
+  const pageTitle = title.endsWith('| Revive Aesthetics') ? title : `${title} | Revive Aesthetics`;
   return {
-    title: { absolute: title.endsWith('| Revive Aesthetics') ? title : `${title} | Revive Aesthetics` },
+    applicationName: clinic.name,
+    title: { absolute: pageTitle },
     description,
     ...(noindex ? { robots: { index: false, follow: true } } : { alternates: { canonical: canonical(path) } }),
-    openGraph: { title, description, type: 'website', url: canonical(path), siteName: clinic.name, locale: 'en_PK', images: [image] },
-    twitter: { card: 'summary_large_image', title, description, images: [image] },
+    openGraph: { title: pageTitle, description, type: 'website', url: canonical(path), siteName: clinic.name, locale: 'en_PK', images: [image] },
+    twitter: { card: 'summary_large_image', title: pageTitle, description, images: [image] },
   };
 }
 

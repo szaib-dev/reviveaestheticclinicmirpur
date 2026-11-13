@@ -54,3 +54,17 @@ export const featuredFaqs: Record<string, [string, string]> = {
   'acne-scar-consultation': ['Can I discuss active acne and scarring at the same visit?', 'Bring both concerns to the consultation. Ask which should be assessed first and whether you need a referral or a separate treatment plan.'],
   microneedling: ['What should I bring to a microneedling consultation?', 'Bring your current skincare and medicine list and mention any previous treatments, skin reactions or healing concerns.'],
 };
+
+/** Page-specific search snippets. These describe consultations without promising results. */
+export const treatmentDescriptions: Record<string, string> = {
+  hydrafacial: 'Explore HydraFacial in Mirpur, AJK at Revive Aesthetics Clinic. Discuss your skincare routine, skin sensitivities and facial options before booking.',
+  'acne-scar-consultation': 'Book an acne and acne scar consultation in Mirpur at Revive Aesthetics. Discuss breakouts, persistent marks, skin texture and your previous skincare.',
+  'pigmentation-consultation': 'Discuss pigmentation and uneven skin tone at Revive Aesthetics Clinic in Mirpur, AJK. Bring your skin history and explore appropriate next steps.',
+  'laser-hair-removal': 'Explore laser hair removal in Mirpur at Revive Aesthetics Clinic. Discuss treatment areas, skin and hair suitability, preparation and aftercare.',
+  'hair-prp': 'Explore hair PRP consultations in Mirpur, AJK at Revive Aesthetics. Discuss hair thinning, previous care and whether scalp PRP is appropriate for you.',
+  botox: 'Considering Botox in Mirpur? Contact Revive Aesthetics Clinic to discuss your goals, practitioner, product, suitability, risks and follow-up care.',
+  microneedling: 'Explore microneedling consultations in Mirpur at Revive Aesthetics Clinic. Discuss skin texture, previous procedures, suitability and recovery.',
+  'chemical-peels': 'Explore chemical peel consultations in Mirpur, AJK at Revive Aesthetics. Discuss your skincare, sensitivities, treatment options and aftercare.',
+  'bridal-skincare-planning': 'Plan bridal skin care in Mirpur with Revive Aesthetics Clinic. Share your event date, skin concerns and routine to discuss timing and preparation.',
+  fillers: 'Explore dermal filler consultations in Mirpur at Revive Aesthetics Clinic. Discuss your goals, previous fillers, suitability, risks and follow-up.',
+};
