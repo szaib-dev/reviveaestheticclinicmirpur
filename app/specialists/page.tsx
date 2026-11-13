@@ -28,7 +28,7 @@ export default function Page() {
       <section className="directory-group">
         <div><h2>Start with your skin concern</h2><p>You do not need to choose a procedure before booking. Share what concerns you, how long it has been present and what you have already tried.</p></div>
         <div>
-          <Link href="/treatments/acne-scar-consultation">Acne, persistent marks and acne scars <ArrowUpRight size={18} aria-hidden="true"/></Link>
+          <Link href="/treatments/acne-scar-consultation">Acne care, persistent marks and acne scars <ArrowUpRight size={18} aria-hidden="true"/></Link>
           <Link href="/treatments/pigmentation-consultation">Pigmentation and uneven skin tone <ArrowUpRight size={18} aria-hidden="true"/></Link>
           <Link href="/treatments/hydrafacial">Facial care and your skincare routine <ArrowUpRight size={18} aria-hidden="true"/></Link>
           <Link href="/treatments/hair-restoration-consultation">Hair thinning and shedding <ArrowUpRight size={18} aria-hidden="true"/></Link>
@@ -39,7 +39,7 @@ export default function Page() {
         <details><summary>How do I choose a skin specialist in Mirpur?</summary><p>Check the practitioner’s professional registration, relevant qualifications and experience with your concern. Ask who will assess you, what the consultation includes and whether referral to another clinician may be appropriate. Contact Revive to confirm the practitioner and scope of your appointment.</p></details>
         <details><summary>What should I bring to my consultation?</summary><p>Bring your skincare and medicine list, details of previous procedures and any relevant medical records. Write down questions about the proposed approach, alternatives, costs, recovery and follow-up.</p></details>
         <details><summary>How do I confirm fees and availability?</summary><p>Call Revive on 05827432845 or use the practitioner contact links above. Confirm the practitioner, consultation fee, appointment time and clinic directions before travelling.</p></details>
-        <p>Revive Aesthetics Clinic is in Mirpur, Azad Jammu &amp; Kashmir, Pakistan. <Link href="/contact">Check opening hours and contact the clinic for directions</Link>, or read our guide to <Link href="/journal/choose-skin-specialist-mirpur">choosing a skin clinic in Mirpur</Link>.</p>
+        <p>Revive Aesthetics Clinic is in Mirpur, Azad Jammu &amp; Kashmir, Pakistan. <Link href="/contact">Check opening hours and contact the clinic for directions</Link>, or read our guide to <Link href="/journal/choose-skin-specialist-mirpur">choosing a skin specialist or dermatologist in Mirpur</Link>.</p>
       </section>
       <BookingLink className="button">Contact the clinic <ArrowUpRight size={18} aria-hidden="true"/></BookingLink>
       <DirectionsLink/>

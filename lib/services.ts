@@ -16,6 +16,12 @@ export const servicesByEnquiry = [
   'Microblading / Lip Tint',
 ];
 export function serviceCopy(slug: string) {
+if(slug === 'acne-scar-consultation') return {
+ overview:'Acne care at Revive starts with a consultation in Mirpur, AJK. Describe whether you want help with ongoing breakouts, marks left after breakouts or changes in skin texture. Bring details of your current routine and previous assessments so you can discuss the right starting point.',
+ benefit:'You can bring questions about recurring breakouts, persistent marks or scarring without choosing a procedure first. Tell the practitioner which concern affects you most and how it has changed over time. Ask whether your concern is within their scope of practice or needs referral.',
+ process:'Before your appointment, make a list of skincare products, medicines and treatments you have already tried. During the consultation, discuss your priorities, the proposed approach, alternatives and follow-up. Confirm the practitioner, consultation fee and any separate treatment costs before making a plan.'
+};
+
 if(slug === 'face-contouring-double-chin-reduction') return {
 overview:'Ask about face contouring and double chin reduction by lipolytic injections at Revive in Mirpur. A consultation is needed to discuss your concern and whether this option is appropriate.',
 benefit:'If you want to discuss facial contours or the area beneath your chin, bring your goals and any previous treatment details. Ask what can realistically be considered for your individual concern.',

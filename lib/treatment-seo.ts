@@ -43,7 +43,7 @@ export const consultationTopics: Record<string, string> = {
 export const searchNames: Record<string, string> = {
   'hair-prp': 'Hair PRP Treatment',
   botox: 'Botox Consultations',
-  'acne-scar-consultation': 'Acne & Acne Scar Consultations',
+  'acne-scar-consultation': 'Acne Care & Scar Consultations',
 };
 
 export const featuredFaqs: Record<string, [string, string]> = {
@@ -58,7 +58,7 @@ export const featuredFaqs: Record<string, [string, string]> = {
 /** Page-specific search snippets. These describe consultations without promising results. */
 export const treatmentDescriptions: Record<string, string> = {
   hydrafacial: 'Explore HydraFacial in Mirpur, AJK at Revive Aesthetics Clinic. Discuss your skincare routine, skin sensitivities and facial options before booking.',
-  'acne-scar-consultation': 'Book an acne and acne scar consultation in Mirpur at Revive Aesthetics. Discuss breakouts, persistent marks, skin texture and your previous skincare.',
+  'acne-scar-consultation': 'Explore acne care in Mirpur, AJK at Revive Aesthetics Clinic. Discuss breakouts, acne marks, scarring and your skincare routine at a personal consultation.',
   'pigmentation-consultation': 'Discuss pigmentation and uneven skin tone at Revive Aesthetics Clinic in Mirpur, AJK. Bring your skin history and explore appropriate next steps.',
   'laser-hair-removal': 'Explore laser hair removal in Mirpur at Revive Aesthetics Clinic. Discuss treatment areas, skin and hair suitability, preparation and aftercare.',
   'hair-prp': 'Explore hair PRP consultations in Mirpur, AJK at Revive Aesthetics. Discuss hair thinning, previous care and whether scalp PRP is appropriate for you.',
