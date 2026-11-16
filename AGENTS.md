@@ -11,3 +11,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 ## Copy preferences
 
 - Do not use em dashes in site copy, metadata, or image descriptions. Use commas, colons, or full stops.
+
+## Delivery preferences
+
+- After completing and validating website changes, commit and push them to the live deployment branch without waiting for another request. Inform the user immediately when the push succeeds. Distinguish a successful Git push from a verified live deployment.
