@@ -30,3 +30,12 @@ Journal cards and draft article leads now use original code-native SVG concept i
 ## Owner-supplied clinic photography
 
 The homepage features the user-supplied retouched reception. The gallery includes the reception, seating area and two treatment-room views. The seating and treatment-room edits were made with built-in ImageGen using the owner photos as references. The edits tidy incidental clutter and balance lighting in warm ivory, taupe, muted mauve and blue while retaining the room layout and equipment. The brochure informed the text-only practitioner profiles. The photo showing a security monitor was left out of the public gallery.
+
+## Treatment-room photo replacement, 14 November 2026
+
+The public clinic gallery now uses the two original owner-supplied photos in place of the retouched treatment-room views:
+
+- `clinic-procedure-room.jpg`: `IMG-20261107-WA0014.jpg`, supplied by the owner.
+- `clinic-facial-room.jpg`: `IMG-20261107-WA0011.jpg`, supplied by the owner.
+
+These originals are copied without retouching. Their captions say "Clinic photograph". Reception and seating retain their existing retouched images and captions. This supersedes the earlier treatment-room gallery selection described above.
